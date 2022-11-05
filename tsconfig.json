@@ -8,10 +8,6 @@
       "sourceMap": true,
       "target": "es5",
       "declaration": true,
-      "types": [
-        "mocha",
-        "node"
-      ]
     },
     "compileOnSave": true,
     "include": [
