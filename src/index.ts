@@ -1,1 +1,3 @@
-export const FishFinder = (name: string) => `Hello ${name}`;
+export const FishScanner = () => {
+  return 'Howdy!';
+};

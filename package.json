@@ -2,23 +2,15 @@
   "name": "phish-scanner",
   "version": "0.0.3",
   "description": "A tool to detect phishing or scam urls. It uses a list of known phishing urls and a list of known scam urls to detect phishing or scam urls.",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Jasper Mayone <jasper@jaspermayone.com>",
   "license": "EPL-2.0",
-  "files": [
-    "lib/**/*"
-  ],
-  "keywords": [
-    "phishing",
-    "phish",
-    "fishing scanner",
-    "phish scanner"
-  ],
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "test": "jest --config jestconfig.json",
+    "test": "jest",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
@@ -36,6 +28,18 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.8.4"
   },
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "phishing",
+    "phish",
+    "fishing scanner",
+    "phish scanner"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
   "bugs": {
     "url": "https://github.com/Heptagram-Project/phish-scanner/issues"
   },
@@ -43,5 +47,8 @@
     "type": "git",
     "url": "git+https://github.com/Heptagram-Project/phish-scanner.git"
   },
-  "homepage": "https://github.com/Heptagram-Project/phish-scanner#readme"
+  "homepage": "https://github.com/Heptagram-Project/phish-scanner#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@j-dogcoder"
+  }
 }
