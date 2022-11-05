@@ -1,1 +1,1 @@
-# Phish-Finder
+# Phish-Scanner

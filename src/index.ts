@@ -1,3 +1,3 @@
-export const FishScanner = () => {
-  return 'Howdy!';
-};
+export const helloWorld = () => {
+    return 'Howdy!'
+}
