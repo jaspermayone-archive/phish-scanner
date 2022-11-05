@@ -31,13 +31,13 @@
     "node": ">=8"
   },
   "bugs": {
-    "url": "https://github.com/Heptagram-Project/phish-scanner/issues"
+    "url": "https://github.com/j-dogcoder/phish-scanner/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Heptagram-Project/phish-scanner.git"
+    "url": "git+https://github.com/j-dogcoder/phish-scanner.git"
   },
-  "homepage": "https://github.com/Heptagram-Project/phish-scanner#readme",
+  "homepage": "https://github.com/j-dogcoder/phish-scanner#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@j-dogcoder"
   }
