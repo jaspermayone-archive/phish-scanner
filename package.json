@@ -1,6 +1,6 @@
 {
   "name": "phish-scanner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tool to detect phishing or scam urls. It uses a list of known phishing urls and a list of known scam urls to detect phishing or scam urls.",
   "main": "src/index.ts",
   "author": "Jasper Mayone <jasper@jaspermayone.com>",
@@ -43,8 +43,5 @@
     "type": "git",
     "url": "git+https://github.com/Heptagram-Project/phish-scanner.git"
   },
-  "homepage": "https://github.com/Heptagram-Project/phish-scanner#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+  "homepage": "https://github.com/Heptagram-Project/phish-scanner#readme"
 }
