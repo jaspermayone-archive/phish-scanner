@@ -1,4 +1,4 @@
-import { getLinkData } from "./functions/getLinkData";
+import { getLinkData } from "./functions/fxMain";
 
 // create main fuction
 const PhishScanner = async () => {
