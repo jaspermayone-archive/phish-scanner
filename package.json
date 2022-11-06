@@ -1,6 +1,6 @@
 {
   "name": "@j-dogcoder/phish-scanner",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "A tool to detect phishing or scam urls. It uses a list of known phishing urls and a list of known scam urls to detect phishing or scam urls.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
