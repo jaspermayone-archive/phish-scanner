@@ -98,17 +98,10 @@
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-10.0.0.tgz#3d9018c575f0e3f7386c1de80ee66cc21fbb7a52"
   integrity sha512-rADY+HtTOA52l9VZWtgQfn4p+UDVM2eDVkMZT1I6syp0YKxW2F9v+0pbRZLsvskhQv/vMb6ZfCay81GHbz5SHg==
 
-"@types/node@^16.10.2":
-  version "16.18.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.3.tgz#d7f7ba828ad9e540270f01ce00d391c54e6e0abc"
-  integrity sha512-jh6m0QUhIRcZpNv7Z/rpN+ZWXOicUUQbSoWks7Htkbb9IjFQj4kzcX/xFCkjstCj5flMsN8FiSvt+q+Tcs4Llg==
-
-"@types/redis@^4.0.11":
-  version "4.0.11"
-  resolved "https://registry.yarnpkg.com/@types/redis/-/redis-4.0.11.tgz#0bb4c11ac9900a21ad40d2a6768ec6aaf651c0e1"
-  integrity sha512-bI+gth8La8Wg/QCR1+V1fhrL9+LZUSWfcqpOj2Kc80ZQ4ffbdL173vQd5wovmoV9i071FU9oP2g6etLuEwb6Rg==
-  dependencies:
-    redis "*"
+"@types/node@^18.0.0":
+  version "18.11.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.9.tgz#02d013de7058cea16d36168ef2fc653464cfbad4"
+  integrity sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==
 
 acorn-walk@^8.1.1:
   version "8.2.0"
@@ -656,7 +649,7 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-redis@*, redis@^4.4.0:
+redis@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/redis/-/redis-4.4.0.tgz#bd73fe74e910ecff6bbe89c7e50887c09b3df6e2"
   integrity sha512-tQyFG6O9iewLxxHYRyirJNklhe2QI7M/0o8q0jk7D9Z/Cxh/7oZrQyHKyjWz0TkkCls8ool/xvhL9K8zRnkaYQ==
