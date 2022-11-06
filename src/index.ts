@@ -1,10 +1,8 @@
 import { getLinkData } from "./functions/fxMain";
 
-// create main fuction
-const PhishScanner = async () => {
 
     // sub fuction called checkLink, that takes a link as a parameter, and returns isScam as a bool
-    const scam = async (link: string): Promise<boolean> => {
+    export async function PhishScan (link: string): Promise<boolean> {
 
         // check the heptagram api
         const results = await getLinkData(link);
@@ -17,7 +15,3 @@ const PhishScanner = async () => {
             return false;
         }
     }
-
-}
-// export main function
-export default PhishScanner
