@@ -47,7 +47,7 @@ function PhishScanner(link) {
                 case 1:
                     results = _a.sent();
                     // check if scamDetected is true
-                    if (results.scamDetected === true) {
+                    if (results.scamDetected) {
                         // if true, return the results
                         return [2 /*return*/, true];
                     }
