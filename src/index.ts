@@ -5,7 +5,7 @@ export async function PhishScanner(link: string): Promise<boolean> {
     // check the heptagram api
     const results = await getLinkData(link);
     // check if scamDetected is true
-    if (results.scamDetected === true) {
+    if (results.scamDetected) {
         // if true, return the results
         return true;
     } else {
