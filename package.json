@@ -1,5 +1,5 @@
 {
-  "name": "@j-dogcoder/phish-scanner",
+  "name": "phish-scanner",
   "version": "1.0.2",
   "description": "A tool to detect phishing or scam urls. It uses a list of known phishing urls and a list of known scam urls to detect phishing or scam urls.",
   "main": "dist/index.js",
@@ -43,9 +43,5 @@
     "type": "git",
     "url": "git+https://github.com/j-dogcoder/phish-scanner.git"
   },
-  "homepage": "https://github.com/j-dogcoder/phish-scanner#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@j-dogcoder",
-    "access": "public"
-  }
+  "homepage": "https://github.com/j-dogcoder/phish-scanner#readme"
 }
