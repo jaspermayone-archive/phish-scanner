@@ -37,25 +37,69 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PhishScanner = void 0;
-var fxMain_1 = require("./functions/fxMain");
-function PhishScanner(link) {
+var GoogleSafeBrowsing_1 = require("./functions/GoogleSafeBrowsing");
+var Phisherman_1 = require("./functions/Phisherman");
+var SinkingYahts_1 = require("./functions/SinkingYahts");
+var UrlScan_1 = require("./functions/UrlScan");
+var VirusTotal_1 = require("./functions/VirusTotal");
+var Walshy_1 = require("./functions/Walshy");
+function PhishScanner(link, keys) {
     return __awaiter(this, void 0, void 0, function () {
-        var results;
+        var phisherman, googleSafeBrowsing, urlScan, virusTotal, walshy, sinkingYahts;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, (0, fxMain_1.getLinkData)(link)];
+                case 0:
+                    if (!link || link === "") {
+                        throw "Link not provided! Please provide a link to check.";
+                    }
+                    if (!keys.phisherman) return [3 /*break*/, 2];
+                    return [4 /*yield*/, (0, Phisherman_1.Phisherman)(link, keys.phisherman)];
                 case 1:
-                    results = _a.sent();
-                    // check if scamDetected is true
-                    if (results.scamDetected) {
-                        // if true, return the results
+                    phisherman = _a.sent();
+                    if (phisherman) {
                         return [2 /*return*/, true];
                     }
-                    else {
-                        // if false, return a message saying the link is not a scam
-                        return [2 /*return*/, false];
+                    _a.label = 2;
+                case 2:
+                    if (!keys.googleSafeBrowsing) return [3 /*break*/, 4];
+                    return [4 /*yield*/, (0, GoogleSafeBrowsing_1.GoogleSafeBrowsing)(link, keys.googleSafeBrowsing)];
+                case 3:
+                    googleSafeBrowsing = _a.sent();
+                    if (googleSafeBrowsing) {
+                        return [2 /*return*/, true];
                     }
-                    return [2 /*return*/];
+                    _a.label = 4;
+                case 4:
+                    if (!keys.urlScan) return [3 /*break*/, 6];
+                    return [4 /*yield*/, (0, UrlScan_1.UrlScan)(link, keys.urlScan)];
+                case 5:
+                    urlScan = _a.sent();
+                    if (urlScan) {
+                        return [2 /*return*/, true];
+                    }
+                    _a.label = 6;
+                case 6:
+                    if (!keys.virusTotal) return [3 /*break*/, 8];
+                    return [4 /*yield*/, (0, VirusTotal_1.VirusTotal)(link, keys.virusTotal)];
+                case 7:
+                    virusTotal = _a.sent();
+                    if (virusTotal) {
+                        return [2 /*return*/, true];
+                    }
+                    _a.label = 8;
+                case 8: return [4 /*yield*/, (0, Walshy_1.Walshy)(link)];
+                case 9:
+                    walshy = _a.sent();
+                    if (walshy) {
+                        return [2 /*return*/, true];
+                    }
+                    return [4 /*yield*/, (0, SinkingYahts_1.SinkingYahts)(link)];
+                case 10:
+                    sinkingYahts = _a.sent();
+                    if (sinkingYahts) {
+                        return [2 /*return*/, true];
+                    }
+                    return [2 /*return*/, false];
             }
         });
     });

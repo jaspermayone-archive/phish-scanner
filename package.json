@@ -1,6 +1,6 @@
 {
   "name": "phish-scanner",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "A tool to detect phishing or scam urls. It uses a list of known phishing urls and a list of known scam urls to detect phishing or scam urls.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,13 +21,13 @@
     "phish scanner"
   ],
   "dependencies": {
-    "@types/node": "^18.0.0",
-    "@types/axios": "^0.14.0",
     "axios": "^1.1.3"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/chai": "^4.3.3",
     "@types/mocha": "^10.0.0",
+    "@types/node": "^18.0.0",
     "chai": "^4.3.6",
     "mocha": "^10.0.0",
     "ts-node": "^10.2.1",

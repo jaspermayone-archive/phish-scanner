@@ -1,15 +1,65 @@
-import { getLinkData } from "./functions/fxMain";
+import { GoogleSafeBrowsing } from "./functions/GoogleSafeBrowsing"
+import { Phisherman } from "./functions/Phisherman"
+import { SinkingYahts } from "./functions/SinkingYahts"
+import { UrlScan } from "./functions/UrlScan";
+import { VirusTotal } from "./functions/VirusTotal";
+import { Walshy } from './functions/Walshy';
 
-export async function PhishScanner(link: string): Promise<boolean> {
+// import keys type
+import { keys } from './types/keys';
 
-    // check the heptagram api
-    const results = await getLinkData(link);
-    // check if scamDetected is true
-    if (results.scamDetected) {
-        // if true, return the results
+
+export async function PhishScanner(link: string, keys: keys  ): Promise<boolean> {
+
+if (!link || link === "") {
+    throw "Link not provided! Please provide a link to check."
+}
+
+
+if (keys.phisherman) {
+    const phisherman = await Phisherman(link, keys.phisherman);
+    if (phisherman) {
         return true;
-    } else {
-        // if false, return a message saying the link is not a scam
-        return false;
     }
+}
+
+// check if safebrowsing key is present
+if (keys.googleSafeBrowsing) {
+    const googleSafeBrowsing = await GoogleSafeBrowsing(link, keys.googleSafeBrowsing);
+    if (googleSafeBrowsing) {
+        return true;
+    }
+}
+
+if (keys.urlScan) {
+    const urlScan = await UrlScan(link, keys.urlScan);
+    if (urlScan) {
+        return true;
+    }
+}
+
+if (keys.virusTotal) {
+    const virusTotal = await VirusTotal(link, keys.virusTotal);
+    if (virusTotal) {
+        return true;
+    }
+}
+
+
+// DIV LINE
+
+const walshy = await Walshy(link);
+if (walshy) {
+    return true;
+}
+
+
+const sinkingYahts = await SinkingYahts(link);
+if (sinkingYahts) {
+    return true;
+}
+
+
+return false;
+
 }
