@@ -23,11 +23,15 @@ describe('keys', () => {
             googleSafeBrowsing: 'test',
             phisherman: 'test',
             urlScan: 'test',
-            virusTotal: 'test'
+            virusTotal: 'test',
+            ipQualityScore: 'test',
+            checkPhish: 'test'
         };
         expect(keys).to.have.property('googleSafeBrowsing');
         expect(keys).to.have.property('phisherman');
         expect(keys).to.have.property('urlScan');
         expect(keys).to.have.property('virusTotal');
+        expect(keys).to.have.property('ipQualityScore');
+        expect(keys).to.have.property('checkPhish');
     });
 });

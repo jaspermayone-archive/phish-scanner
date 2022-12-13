@@ -22,6 +22,8 @@ This is the bare minimum with this package, and will call **several** APIs that 
 - [Google Safe Browsing](https://developers.google.com/safe-browsing/v4/get-started)
 - [urlscan.io](https://urlscan.io/about-api/)
 - [VirusTotal](https://developers.virustotal.com/reference#url-scan)
+- [CheckPhish](https://checkphish.ai/)
+- [IpQualityScore](https://www.ipqualityscore.com/)
 - More to come soon!
 
 To provide your own keys, add them to the keys object like so:
@@ -32,6 +34,8 @@ const keys = {
   phisherman: "Your Phisherman key here",
   urlScan: "Your urlscan.io key here",
   virusTotal: "Your VirusTotal key here",
+  checkPhish: "Your CheckPhish key here",
+  ipQualityScore: "Your IpQualityScore key here",
 };
 ```
 
