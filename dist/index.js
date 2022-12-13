@@ -37,15 +37,18 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PhishScanner = void 0;
-var GoogleSafeBrowsing_1 = require("./functions/GoogleSafeBrowsing");
-var Phisherman_1 = require("./functions/Phisherman");
-var SinkingYahts_1 = require("./functions/SinkingYahts");
-var UrlScan_1 = require("./functions/UrlScan");
-var VirusTotal_1 = require("./functions/VirusTotal");
-var Walshy_1 = require("./functions/Walshy");
+var GoogleSafeBrowsing_1 = require("./functions/checks/GoogleSafeBrowsing");
+var Phisherman_1 = require("./functions/checks/Phisherman");
+var SinkingYahts_1 = require("./functions/checks/SinkingYahts");
+var UrlScan_1 = require("./functions/checks/UrlScan");
+var VirusTotal_1 = require("./functions/checks/VirusTotal");
+var Walshy_1 = require("./functions/checks/Walshy");
+var IpQualityScore_1 = require("./functions/checks/IpQualityScore");
+var CheckPhish_1 = require("./functions/checks/CheckPhish");
+var SpenTK_1 = require("./functions/checks/SpenTK");
 function PhishScanner(link, keys) {
     return __awaiter(this, void 0, void 0, function () {
-        var phisherman, googleSafeBrowsing, urlScan, virusTotal, walshy, sinkingYahts;
+        var phisherman, googleSafeBrowsing, urlScan, virusTotal, ipQualityScore, checkPhish, spenTK, walshy, sinkingYahts;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -87,14 +90,38 @@ function PhishScanner(link, keys) {
                         return [2 /*return*/, true];
                     }
                     _a.label = 8;
-                case 8: return [4 /*yield*/, (0, Walshy_1.Walshy)(link)];
+                case 8:
+                    if (!keys.ipQualityScore) return [3 /*break*/, 10];
+                    return [4 /*yield*/, (0, IpQualityScore_1.IpQualityScore)(link, keys.ipQualityScore)];
                 case 9:
+                    ipQualityScore = _a.sent();
+                    if (ipQualityScore) {
+                        return [2 /*return*/, true];
+                    }
+                    _a.label = 10;
+                case 10:
+                    if (!keys.checkPhish) return [3 /*break*/, 12];
+                    return [4 /*yield*/, (0, CheckPhish_1.CheckPhish)(link, keys.checkPhish)];
+                case 11:
+                    checkPhish = _a.sent();
+                    if (checkPhish) {
+                        return [2 /*return*/, true];
+                    }
+                    _a.label = 12;
+                case 12: return [4 /*yield*/, (0, SpenTK_1.SpenTK)(link)];
+                case 13:
+                    spenTK = _a.sent();
+                    if (spenTK) {
+                        return [2 /*return*/, true];
+                    }
+                    return [4 /*yield*/, (0, Walshy_1.Walshy)(link)];
+                case 14:
                     walshy = _a.sent();
                     if (walshy) {
                         return [2 /*return*/, true];
                     }
                     return [4 /*yield*/, (0, SinkingYahts_1.SinkingYahts)(link)];
-                case 10:
+                case 15:
                     sinkingYahts = _a.sent();
                     if (sinkingYahts) {
                         return [2 /*return*/, true];

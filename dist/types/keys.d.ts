@@ -3,4 +3,6 @@ export declare type keys = {
     phisherman?: string;
     urlScan?: string;
     virusTotal?: string;
+    ipQualityScore?: string;
+    checkPhish?: string;
 };
