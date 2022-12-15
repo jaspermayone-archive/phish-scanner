@@ -1,16 +1,8 @@
 {
-    "compilerOptions": {
-      "lib": ["es2017"],
-      "module": "commonjs",
-      "noImplicitReturns": true,
-      "esModuleInterop": true,
-      "outDir": "dist",
-      "sourceMap": true,
-      "target": "es5",
-      "declaration": true,
-    },
-    "compileOnSave": true,
-    "include": [
-      "src"
-    ]
+  "extends": "./tsconfig-base.json",
+  "compilerOptions": {
+      "module": "esnext",
+      "outDir": "dist/mjs",
+      "target": "esnext"
   }
+}

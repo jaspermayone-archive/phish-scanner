@@ -1,14 +1,14 @@
 {
   "name": "phish-scanner",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "A tool to detect phishing or scam urls. It uses a list of known phishing urls and a list of known scam urls to detect phishing or scam urls.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/mjs/index.js",
   "author": "Jasper Mayone <jasper@jaspermayone.com>",
   "license": "EPL-2.0",
   "scripts": {
     "test": "mocha --timeout 60000 --exit -r ts-node/register test/**/*.spec.ts",
-    "build": "tsc",
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./fixup",
     "deploy": "npm publish",
     "preversion": "npm test",
     "version": "npm run build && git add -A dist",

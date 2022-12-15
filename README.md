@@ -1,5 +1,7 @@
 # Phish-Scanner
 
+This package supports ESM and CommonJS.
+
 To use this package, please refer to the snippet below:
 
 ```typescript
