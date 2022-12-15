@@ -17,7 +17,7 @@
         "skipLibCheck": true,
         "strict": true,
         "traceResolution": false,
-        "types": ["node", "axios", "chai", "mocha"],
+        "types": ["node"],
         "noImplicitReturns": true
     },
     "compileOnSave": false,
