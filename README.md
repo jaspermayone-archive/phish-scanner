@@ -2,10 +2,12 @@
 
 This package supports ESM and CommonJS.
 
-To use this package, please refer to the snippet below:
+For security information on this package, please refer to the Security.md file.
+
+To use this package with ESM, please refer to the snippet below:
 
 ```typescript
-import { PhishScanner } from 'phish-scanner';
+import { scan } from "phish-scanner";
 
 const keys {}
 
@@ -14,7 +16,23 @@ const phishScanner = PhishScanner(link, keys);
 // this returns a promise, so you can use async/await or .then()
 
 if (phishscanner) {
-    // this is a phish link, do something
+  // this is a phish link, do something
+}
+```
+
+To use this package with CommonJS, please refer to the snippet below:
+
+```javascript
+const { scan } = require("phish-scanner");
+
+const keys {}
+
+const phishScanner = PhishScanner(link, keys);
+
+// this returns a promise, so you can use async/await or .then()
+
+if (phishscanner) {
+  // this is a phish link, do something
 }
 ```
 
