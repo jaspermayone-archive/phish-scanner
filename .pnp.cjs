@@ -36,7 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/axios", "npm:0.14.0"],\
             ["@types/chai", "npm:4.3.4"],\
             ["@types/mocha", "npm:10.0.1"],\
-            ["@types/node", "npm:18.11.9"],\
+            ["@types/node", "npm:18.11.15"],\
             ["axios", "npm:1.1.3"],\
             ["chai", "npm:4.3.7"],\
             ["mocha", "npm:10.2.0"],\
@@ -190,10 +190,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/node", [\
-        ["npm:18.11.9", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-18.11.9-d21dd6ec05-cc0aae109e.zip/node_modules/@types/node/",\
+        ["npm:18.11.15", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-18.11.15-556d6408a5-cae8692a5c.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:18.11.9"]\
+            ["@types/node", "npm:18.11.15"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1582,7 +1582,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/axios", "npm:0.14.0"],\
             ["@types/chai", "npm:4.3.4"],\
             ["@types/mocha", "npm:10.0.1"],\
-            ["@types/node", "npm:18.11.9"],\
+            ["@types/node", "npm:18.11.15"],\
             ["axios", "npm:1.1.3"],\
             ["chai", "npm:4.3.7"],\
             ["mocha", "npm:10.2.0"],\
@@ -1904,7 +1904,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.11"],\
             ["@tsconfig/node14", "npm:1.0.3"],\
             ["@tsconfig/node16", "npm:1.0.3"],\
-            ["@types/node", "npm:18.11.9"],\
+            ["@types/node", "npm:18.11.15"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
