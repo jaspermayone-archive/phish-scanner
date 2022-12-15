@@ -35,11 +35,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@types/axios", "npm:0.14.0"],\
             ["@types/chai", "npm:4.3.4"],\
-            ["@types/mocha", "npm:10.0.0"],\
+            ["@types/mocha", "npm:10.0.1"],\
             ["@types/node", "npm:18.11.9"],\
             ["axios", "npm:1.1.3"],\
             ["chai", "npm:4.3.7"],\
-            ["mocha", "npm:10.1.0"],\
+            ["mocha", "npm:10.2.0"],\
             ["ts-node", "virtual:99b35562f9d33e7e606352c3ce6bebf615f9dd8c030b01e9c9bab7811d603929ffd435287df38bfac794c93f032427736ac0c945a51da17c46981f67e19bf3fc#npm:10.9.1"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=a1c5e5"]\
           ],\
@@ -181,10 +181,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/mocha", [\
-        ["npm:10.0.0", {\
-          "packageLocation": "./.yarn/cache/@types-mocha-npm-10.0.0-a2509f7d26-69e3896a63.zip/node_modules/@types/mocha/",\
+        ["npm:10.0.1", {\
+          "packageLocation": "./.yarn/cache/@types-mocha-npm-10.0.1-7c94e9e170-224ea9fce7.zip/node_modules/@types/mocha/",\
           "packageDependencies": [\
-            ["@types/mocha", "npm:10.0.0"]\
+            ["@types/mocha", "npm:10.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -613,10 +613,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:206792a93c0a25534511a88cb4911c3e1773dcf4ae12e4b97c5d7f4ec423c9b472f827821fe82158c9e8e54dc3e54455a8deb5f0adfd4a50ea80ee1ce22134cc#npm:4.3.4", {\
-          "packageLocation": "./.yarn/__virtual__/debug-virtual-24291acaca/0/cache/debug-npm-4.3.4-4513954577-3dbad3f94e.zip/node_modules/debug/",\
+        ["virtual:87db25c7c5e6b25bbc12571091cdabc648b79d427ab445d1714ccfdcdfb3265c9de6561ca760cc3de470037cbedf3af4be56ba3b684b3a1c01d4c9c2fd55a741#npm:4.3.4", {\
+          "packageLocation": "./.yarn/__virtual__/debug-virtual-762d08cbe9/0/cache/debug-npm-4.3.4-4513954577-3dbad3f94e.zip/node_modules/debug/",\
           "packageDependencies": [\
-            ["debug", "virtual:206792a93c0a25534511a88cb4911c3e1773dcf4ae12e4b97c5d7f4ec423c9b472f827821fe82158c9e8e54dc3e54455a8deb5f0adfd4a50ea80ee1ce22134cc#npm:4.3.4"],\
+            ["debug", "virtual:87db25c7c5e6b25bbc12571091cdabc648b79d427ab445d1714ccfdcdfb3265c9de6561ca760cc3de470037cbedf3af4be56ba3b684b3a1c01d4c9c2fd55a741#npm:4.3.4"],\
             ["@types/supports-color", null],\
             ["ms", "npm:2.1.2"],\
             ["supports-color", "npm:8.1.1"]\
@@ -1393,14 +1393,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["mocha", [\
-        ["npm:10.1.0", {\
-          "packageLocation": "./.yarn/cache/mocha-npm-10.1.0-206792a93c-c64c730576.zip/node_modules/mocha/",\
+        ["npm:10.2.0", {\
+          "packageLocation": "./.yarn/cache/mocha-npm-10.2.0-87db25c7c5-406c45eab1.zip/node_modules/mocha/",\
           "packageDependencies": [\
-            ["mocha", "npm:10.1.0"],\
+            ["mocha", "npm:10.2.0"],\
             ["ansi-colors", "npm:4.1.1"],\
             ["browser-stdout", "npm:1.3.1"],\
             ["chokidar", "npm:3.5.3"],\
-            ["debug", "virtual:206792a93c0a25534511a88cb4911c3e1773dcf4ae12e4b97c5d7f4ec423c9b472f827821fe82158c9e8e54dc3e54455a8deb5f0adfd4a50ea80ee1ce22134cc#npm:4.3.4"],\
+            ["debug", "virtual:87db25c7c5e6b25bbc12571091cdabc648b79d427ab445d1714ccfdcdfb3265c9de6561ca760cc3de470037cbedf3af4be56ba3b684b3a1c01d4c9c2fd55a741#npm:4.3.4"],\
             ["diff", "npm:5.0.0"],\
             ["escape-string-regexp", "npm:4.0.0"],\
             ["find-up", "npm:5.0.0"],\
@@ -1581,11 +1581,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["phish-scanner", "workspace:."],\
             ["@types/axios", "npm:0.14.0"],\
             ["@types/chai", "npm:4.3.4"],\
-            ["@types/mocha", "npm:10.0.0"],\
+            ["@types/mocha", "npm:10.0.1"],\
             ["@types/node", "npm:18.11.9"],\
             ["axios", "npm:1.1.3"],\
             ["chai", "npm:4.3.7"],\
-            ["mocha", "npm:10.1.0"],\
+            ["mocha", "npm:10.2.0"],\
             ["ts-node", "virtual:99b35562f9d33e7e606352c3ce6bebf615f9dd8c030b01e9c9bab7811d603929ffd435287df38bfac794c93f032427736ac0c945a51da17c46981f67e19bf3fc#npm:10.9.1"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=a1c5e5"]\
           ],\
