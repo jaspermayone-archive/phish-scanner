@@ -9,7 +9,7 @@ export const CheckPhish = async (link, key) => {
     }
     const response1 = await axios.post("https://developers.checkphish.ai/api/neo/scan", {
         headers: {
-            "Referer": "https://itsfishy.xyz",
+            "Referer": "It's Phishy Package",
             "Content-Type": "application/json",
         },
         apiKey: `${key}`,
@@ -24,7 +24,7 @@ export const CheckPhish = async (link, key) => {
         jobID: `${jobID}`,
         insights: `${insights}`,
         headers: {
-            "Referer": "https://itsfishy.xyz",
+            "Referer": "It's Phishy Package",
             "Content-Type": "application/json",
         },
     });
@@ -36,7 +36,7 @@ export const CheckPhish = async (link, key) => {
             jobID: `${jobID}`,
             insights: `${insights}`,
             headers: {
-                "Referer": "https://itsfishy.xyz",
+                "Referer": "It's Phishy Package",
                 "Content-Type": "application/json",
             },
         });

@@ -14,10 +14,10 @@ export const GoogleSafeBrowsing = async (
         throw "Google Safe Browsing API key is not defined";
     }
 
-    // make a request to the Google Safe Browsing API, and set the referer to the link itsfishy.xyz
+    // make a request to the Google Safe Browsing API, and set the referer to the link itsphishy.xyz
     const response = await axios.post(`https://safebrowsing.googleapis.com/v4/threatMatches:find?key=${key}`, {
         "client": {
-            "clientId": "itsfishy.xyz",
+            "clientId": "It's Phishy Package",
             "clientVersion": "1.0.0"
         },
         "threatInfo": {
@@ -30,7 +30,7 @@ export const GoogleSafeBrowsing = async (
         }
     }, {
         headers: {
-            "Referer": "https://itsfishy.xyz"
+            "Referer": "It's Phishy Package"
         }
     })
 

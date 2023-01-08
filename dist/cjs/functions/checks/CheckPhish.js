@@ -24,7 +24,7 @@ const CheckPhish = (link, key) => __awaiter(void 0, void 0, void 0, function* ()
     }
     const response1 = yield axios_1.default.post("https://developers.checkphish.ai/api/neo/scan", {
         headers: {
-            "Referer": "https://itsfishy.xyz",
+            "Referer": "It's Phishy Package",
             "Content-Type": "application/json",
         },
         apiKey: `${key}`,
@@ -39,7 +39,7 @@ const CheckPhish = (link, key) => __awaiter(void 0, void 0, void 0, function* ()
         jobID: `${jobID}`,
         insights: `${insights}`,
         headers: {
-            "Referer": "https://itsfishy.xyz",
+            "Referer": "It's Phishy Package",
             "Content-Type": "application/json",
         },
     });
@@ -51,7 +51,7 @@ const CheckPhish = (link, key) => __awaiter(void 0, void 0, void 0, function* ()
             jobID: `${jobID}`,
             insights: `${insights}`,
             headers: {
-                "Referer": "https://itsfishy.xyz",
+                "Referer": "It's Phishy Package",
                 "Content-Type": "application/json",
             },
         });

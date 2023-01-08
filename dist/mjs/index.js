@@ -6,10 +6,14 @@ import { VirusTotal } from "./functions/checks/VirusTotal";
 import { Walshy } from './functions/checks/Walshy';
 import { IpQualityScore } from "./functions/checks/IpQualityScore";
 import { CheckPhish } from "./functions/checks/CheckPhish";
-import { SpenTK } from "./functions/checks/SpenTK";
+import { Internal } from "functions/checks/Internal";
 export async function PhishScanner(link, keys) {
     if (!link || link === "") {
         throw "Link not provided! Please provide a link to check.";
+    }
+    const internal = await Internal(link);
+    if (internal) {
+        return true;
     }
     if (keys.phisherman) {
         const phisherman = await Phisherman(link, keys.phisherman);
@@ -49,10 +53,6 @@ export async function PhishScanner(link, keys) {
         }
     }
     // DIV LINE
-    const spenTK = await SpenTK(link);
-    if (spenTK) {
-        return true;
-    }
     const walshy = await Walshy(link);
     if (walshy) {
         return true;

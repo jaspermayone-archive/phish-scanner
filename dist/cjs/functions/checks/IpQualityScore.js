@@ -22,10 +22,10 @@ const IpQualityScore = (link, key) => __awaiter(void 0, void 0, void 0, function
     if (!key || key === "") {
         throw "Ip Quality Score API key is not defined";
     }
-    // make a request to the Ip Quality Score API, and set the referer to the link itsfishy.xyz
+    // make a request to the Ip Quality Score API, and set the referer to the link itsphishy.xyz
     const response = yield axios_1.default.get(`https://ipqualityscore.com/api/json/url/${key}/${link}`, {
         headers: {
-            "Referer": "https://itsfishy.xyz"
+            "Referer": "It's Phishy Package"
         }
     });
     if (response.data.unsafe || response.data.spam || response.data.phishing || response.data.malware) {

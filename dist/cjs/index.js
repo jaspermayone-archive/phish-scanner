@@ -18,11 +18,15 @@ const VirusTotal_1 = require("./functions/checks/VirusTotal");
 const Walshy_1 = require("./functions/checks/Walshy");
 const IpQualityScore_1 = require("./functions/checks/IpQualityScore");
 const CheckPhish_1 = require("./functions/checks/CheckPhish");
-const SpenTK_1 = require("./functions/checks/SpenTK");
+const Internal_1 = require("functions/checks/Internal");
 function PhishScanner(link, keys) {
     return __awaiter(this, void 0, void 0, function* () {
         if (!link || link === "") {
             throw "Link not provided! Please provide a link to check.";
+        }
+        const internal = yield (0, Internal_1.Internal)(link);
+        if (internal) {
+            return true;
         }
         if (keys.phisherman) {
             const phisherman = yield (0, Phisherman_1.Phisherman)(link, keys.phisherman);
@@ -62,10 +66,6 @@ function PhishScanner(link, keys) {
             }
         }
         // DIV LINE
-        const spenTK = yield (0, SpenTK_1.SpenTK)(link);
-        if (spenTK) {
-            return true;
-        }
         const walshy = yield (0, Walshy_1.Walshy)(link);
         if (walshy) {
             return true;

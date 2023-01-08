@@ -12,17 +12,29 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SpenTK = void 0;
+exports.Internal = void 0;
 const axios_1 = __importDefault(require("axios"));
-const SpenTK = (link) => __awaiter(void 0, void 0, void 0, function* () {
+const Internal = (link) => __awaiter(void 0, void 0, void 0, function* () {
     if (!link || link === "") {
-        throw "Link not provided! || SpenTK.ts";
+        throw "Link not provided! || Internal.ts";
     }
-    // make a request to the SpenTK API
-    const response = yield axios_1.default.get(`https://spen.tk/api/v1/isScamLink?link=${link}`);
-    if (response.data.result) {
+    const linkResponse = yield axios_1.default.get(`https://api.itsphishy.xyz/link/check?link=${link}`, {
+        headers: {
+            Referer: "It's Phishy Package",
+            "Content-Type": "application/json",
+        },
+    });
+    const domainResponse = yield axios_1.default.get(`https://api.itsphishy.xyz/domain/check?domain=${link}`, {
+        headers: {
+            Referer: "It's Phishy Package",
+            "Content-Type": "application/json",
+        },
+    });
+    if (linkResponse.data.isScam || domainResponse.data.isScam) {
         return true;
     }
-    return false;
+    else {
+        return false;
+    }
 });
-exports.SpenTK = SpenTK;
+exports.Internal = Internal;
