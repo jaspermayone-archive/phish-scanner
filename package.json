@@ -1,6 +1,6 @@
 {
   "name": "phish-scanner",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "A tool to detect phishing or scam urls. It uses a list of known phishing urls and a list of known scam urls to detect phishing or scam urls.",
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
