@@ -11,7 +11,7 @@
     "deploy": "npm publish",
     "preversion": "npm test",
     "version": "npm run build && git add -A dist",
-    "postversion": "git push && git push --tags && rm -rf build/temp"
+    "postversion": "git push && git push --tags && rm -rf dist/temp"
   },
   "keywords": [
     "phishing",
