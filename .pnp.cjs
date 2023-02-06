@@ -36,7 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.11.19"],\
             ["axios", "npm:1.3.2"],\
             ["ts-node", "virtual:99b35562f9d33e7e606352c3ce6bebf615f9dd8c030b01e9c9bab7811d603929ffd435287df38bfac794c93f032427736ac0c945a51da17c46981f67e19bf3fc#npm:10.9.1"],\
-            ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=a1c5e5"]\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=a1c5e5"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -280,7 +280,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:18.11.19"],\
             ["axios", "npm:1.3.2"],\
             ["ts-node", "virtual:99b35562f9d33e7e606352c3ce6bebf615f9dd8c030b01e9c9bab7811d603929ffd435287df38bfac794c93f032427736ac0c945a51da17c46981f67e19bf3fc#npm:10.9.1"],\
-            ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=a1c5e5"]\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=a1c5e5"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -323,7 +323,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["create-require", "npm:1.1.1"],\
             ["diff", "npm:4.0.2"],\
             ["make-error", "npm:1.3.6"],\
-            ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=a1c5e5"],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=a1c5e5"],\
             ["v8-compile-cache-lib", "npm:3.0.1"],\
             ["yn", "npm:3.1.1"]\
           ],\
@@ -340,10 +340,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["typescript", [\
-        ["patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=a1c5e5", {\
-          "packageLocation": "./.yarn/cache/typescript-patch-6c15aba1e8-37f6e2c3c5.zip/node_modules/typescript/",\
+        ["patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=a1c5e5", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-b5c51365ca-2eee5c37ca.zip/node_modules/typescript/",\
           "packageDependencies": [\
-            ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=a1c5e5"]\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=a1c5e5"]\
           ],\
           "linkType": "HARD"\
         }]\
