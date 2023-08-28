@@ -33,7 +33,7 @@
     "@types/chai": "^4.3.5",
     "@types/mocha": "^10.0.1",
     "@types/node": "^20.5.0",
-    "chai": "^4.3.7",
+    "chai": "^4.3.8",
     "mocha": "^10.2.0",
     "semantic-release": "^21.0.7",
     "ts-node": "^10.9.1",
